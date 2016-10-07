@@ -14,3 +14,16 @@ _wapiq.push(function(W) {
 });
 });
 </script>
+
+
+<section><div class="container"> <script src="//fast.wistia.com/assets/external/api.js" async></script> <link rel="stylesheet" href="//fast.wistia.com/assets/external/uploader.css" /><div id="wistia_uploader" style="height:360px;width:640px;"></div> <script>window._wapiq = window._wapiq || [];
+		_wapiq.push(function(W) {
+		  window.wistiaUploader = new W.Uploader({
+		    accessToken: "fca182aafb8b34b351fddbbba21adb13b6d013b94fdd6b5ac86cb39647c28e8a",
+		    dropIn: "wistia_uploader",
+		    projectId: "zg1h0dil2d"
+		  });
+		  wistiaUploader.bind("uploadfailed", function(file, errorResponse) {
+			  console.log("upload failed:", errorResponse.error);
+			});
+		});</script> </div> </section>
