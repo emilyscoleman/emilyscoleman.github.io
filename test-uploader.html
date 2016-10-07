@@ -9,5 +9,8 @@ _wapiq.push(function(W) {
     dropIn: "wistia_uploader",
     projectId: "e69il0vlmw"
   });
+  wistiaUploader.bind("uploadfailed", function(file, errorResponse) {
+      console.log("upload failed:", errorResponse.error);
+});
 });
 </script>
